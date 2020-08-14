@@ -52,7 +52,7 @@
 <li>生成SSH添加到GitHub</li>
 <li>将hexo部署到GitHub</li>
 <li>设置个人域名（可以不设置）</li>
-<li>使用及主题选择配置</li>
+<li>使用及主题配置</li>
 <li>git分支多终端工作（换电脑如何继续写博客）</li>
 <li>FQA</li>
 </ol>
@@ -131,7 +131,7 @@ npm -v</code></pre>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 <p>过不了多久，再打开你的浏览器，输入你自己的域名，就可以看到搭建的网站啦！</p>
 <hr>
-<h3 id="使用及主题选择配置"><a href="#使用及主题选择配置" class="headerlink" title="使用及主题选择配置"></a>使用及主题选择配置</h3><ul>
+<h3 id="使用及主题配置"><a href="#使用及主题配置" class="headerlink" title="使用及主题配置"></a>使用及主题配置</h3><ul>
 <li><strong>使用</strong>：</li>
 </ul>
 <p>接下来你就可以正式开始写文章了</p>
