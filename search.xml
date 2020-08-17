@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>欢迎来到我的博客</title>
+    <url>/2020/08/12/hello-world/</url>
+    <content><![CDATA[<p>宁可十年不将军，不可一日不拱卒</p>
+<a id="more"></a>
+
+<h2 id="好似神马都会，又好像神马都不会！！！"><a href="#好似神马都会，又好像神马都不会！！！" class="headerlink" title="好似神马都会，又好像神马都不会！！！"></a>好似神马都会，又好像神马都不会！！！</h2><h3 id="不会？"><a href="#不会？" class="headerlink" title="不会？"></a>不会？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">此时要装逼一顿查。。。。。。（装逼完记得写博客，要不然以后没得装！）</span><br></pre></td></tr></table></figure>
+
+<h3 id="会！"><a href="#会！" class="headerlink" title="会！"></a>会！</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">此时唾沫横飞一顿装。。。。。。（回顾或者继续写博客，哪天忘记没得装！）</span><br></pre></td></tr></table></figure>
+
+<p>不要说记得住，老夫逮到就是一顿输出！</p>
+]]></content>
+      <categories>
+        <category>home</category>
+      </categories>
+      <tags>
+        <tag>home</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo介绍与博客搭建</title>
     <url>/2020/08/13/Hexo%E4%BB%8B%E7%BB%8D%E4%B8%8E%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<h2 id="Hexo-简介"><a href="#Hexo-简介" class="headerlink" title="Hexo 简介"></a>Hexo 简介</h2><p>主页： <a href="https://hexo.io/zh-cn/">https://hexo.io/zh-cn/</a><br>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
@@ -12,7 +31,6 @@
 <li>可扩展性强<br> 强大的 API 带来无限的可能，与数种模板引擎（EJS，Pug，Nunjucks）和工具（Babel，PostCSS，Less/Sass）轻易集成。</li>
 </ul>
 <p>但是静态博客并非没有缺点。动态博客更新文章时,脚本是不变的,只需要更新数据库。静态博客要频繁改动文件,不支持增量式上传的东西,比如ftp,就难于管理。此外,还要十分熟悉git各种命令,才能部署页面。</p>
-<hr>
 <h3 id="源码结构"><a href="#源码结构" class="headerlink" title="源码结构"></a>源码结构</h3><p>  <img src="/images/md/hexomd.webp"></p>
 <table>
 <thead>
@@ -58,16 +76,18 @@
 </ol>
 <hr>
 <h3 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h3><p>Git是目前世界上最先进的分布式版本控制系统，可以有效、高速的处理从很小到非常大的项目版本管理。也就是用来管理你的hexo博客文章，上传到GitHub的工具。<br>windows：到git官网上下载<a href="https://gitforwindows.org/" title="download git">download git</a>,下载后会有一个Git Bash的命令行工具，以后就用这个工具来使用git。<br>linux：</p>
-<pre><code>sudo apt-get install git</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+
 <p>安装好后，用git –version 来查看一下版本<br>windows在git安装完后，就可以直接使用git bash来敲命令行了，不用自带的cmd，cmd有点难用。</p>
 <hr>
 <h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>Hexo是基于nodeJS编写的，所以需要安装一下nodeJs和里面的npm工具。<br>windows：<a href="https://nodejs.org/en/download/" title="https://nodejs.org/en/download/">download nodejs</a>选择LTS版本就行了。<br>linux：</p>
-<pre><code>sudo apt-get install nodejs
-sudo apt-get install npm</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get install nodejs</span><br><span class="line">sudo apt-get install npm</span><br></pre></td></tr></table></figure>
+
 <p>安装完后,打开命令行,检查一下有没有安装成功。</p>
-<pre><code>node -v
-npm -v</code></pre>
-<h3 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h3><p>创建一个文件夹blog，这个文件夹下直接右键git bash打开。输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="安装HEXO"><a href="#安装HEXO" class="headerlink" title="安装HEXO"></a>安装HEXO</h3><p>创建一个文件夹myblog，这个文件夹下直接右键git bash打开。输入以下命令：</p>
 <ul>
 <li><strong>全局安装 hexo。</strong></li>
 </ul>
@@ -77,9 +97,8 @@ npm -v</code></pre>
 <li><strong>初始化</strong></li>
 </ul>
 <p>hexo init，就会自动构建一个 hexo 项目，紧接着执行 hexo s。<br>浏览器访问 localhost:4000 就可以看到效果啦！过程一定要快，凉了就不好吃了。</p>
-<pre><code>    hexo init
-    // 本地运行
-    hexo s</code></pre>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo init</span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地运行</span></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
 <ul>
 <li><strong>安装插件</strong></li>
 </ul>
@@ -113,7 +132,7 @@ npm -v</code></pre>
 <p>打开站点配置文件 _config.yml 找到deploy配置如下</p>
 <pre><code>deploy:
   type: git
-  repo: &lt;个人仓库地址&gt; https://github.com/YourgithubName/YourgithubName.github.io.git
+  repo: &lt;个人仓库地址&gt;     https://github.com/username/username.github.io.git
   branch: &lt;deploy 的分支&gt; master</code></pre>
 <ul>
 <li><strong>安装命令：</strong></li>
@@ -286,43 +305,279 @@ date: 2013/7/13 20:46:25
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
 <p>主题配置文件是 themes/next/ 文件夹下的_config.yml</p>
 <ul>
-<li>主题文件结构</li>
 <li>menu菜单</li>
+</ul>
+<pre><code>menu:
+  home: /|| fa fa-home
+  about: /about/|| fa fa-user
+  tags: /tags/|| fa fa-tags
+  categories: /categories/|| fa fa-th
+  archives: /archives/|| fa fa-archive</code></pre>
+<p>home 主页路径 和 样式。<br>about 关于页面路径 和 样式。<br>tags 标签页面路径 和 样式。<br>categories 分类页面路径 和 样式。<br>archives 生成博客页面路径 和 样式。<br>这里只是列出主要的配置，其他与菜单相关的配置自行学习。</p>
+<ul>
 <li>sidebar侧边栏</li>
+</ul>
+<pre><code>sidebar:
+  # Sidebar Position.
+  position: left
+  #position: right
+
+  #Manual define the sidebar width. If commented, will be default for:
+  # Muse | Mist: 320
+  # Pisces | Gemini: 240
+  #width: 300
+
+  # Sidebar Display (only for Muse | Mist), available values:
+  #  - post    expand on posts automatically. Default.
+  #  - always  expand for all pages automatically.
+  #  - hide    expand only when click on the sidebar toggle icon.
+  #  - remove  totally remove sidebar including sidebar toggle.
+  display: post
+
+  # Sidebar padding in pixels.
+  padding: 18
+  # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
+  offset: 12</code></pre>
+<p>position 侧边栏位置。<br>width 宽度 不设置默认300。<br>display 是否可见 默认post 一般默认就好。<br>padding offset 不解释了。</p>
+<ul>
 <li>search搜索框</li>
-<li>分类</li>
-<li>标签</li>
-<li>关于</li>
+</ul>
+<pre><code># Local Search
+# Dependencies: https://github.com/next-theme/hexo-generator-searchdb
+local_search:
+  enable: true
+  # If auto, trigger search by changing input.
+  # If manual, trigger search by pressing enter key or search button.
+  trigger: auto
+  # Show top n results per article, show all results by setting to -1
+  top_n_per_article: 1
+  # Unescape html strings to the readable one.
+  unescape: false
+  # Preload the search data when the page loads.
+  preload: false</code></pre>
+<p>enable 是否开启  默认false 改成true。<br>top_n_per_article 字段表示在每篇文章中显示的搜索结果数量，设成 -1 会显示每篇文章的所有搜索结果数量。<br>其他默认</p>
+<p>修改站点配置文件 _config.yml，加入以下配置。</p>
+<pre><code>search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000</code></pre>
+<p>path 搜索路径。<br>field 搜索范围， 默认post，也可以设置page，all等。<br>format 搜索文件类型，默认html。<br>limit 限制搜索的条目数。</p>
+<p>安装搜索插件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>categories分类</li>
+</ul>
+<p>新建分类</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p>这样会在再/myblog/source目录下生成categories目录并且生成了一个index.md文档。</p>
+<pre><code>---
+title: categories
+date: 2018-03-02 12:33:16
+type: &quot;categories&quot;
+comments: false
+---</code></pre>
+<p>当然咱是中国人，所以title咱们改成 “分类” 中文。<br>顺便说下comments这个是标记你是否需要当前文档开启评论，在分类页面当然是不想。</p>
+<p>这时候你发布完成后，发现分类菜单点击后有页面出来了，但是页面上可能什么标签都没有，只有一个标题，这是怎么回事？？？？<br>这是因为在你生成博客md文档中没有添加categories分类。再source/_post目录下打开你的博客，再顶部你可以看到如下：</p>
+<pre><code>---
+title: 欢迎来到我的博客
+date: 2020-08-12 17:46:43
+comments: true
+categories: 
+ - home
+ - xxx
+tags: 
+ - home
+---</code></pre>
+<p>categories：这个就是当前博客你需要指定的分类名称。<br>要注意，categories再每个文档只能有一个名称，再写其他就是子名称(例如上面的xxx)。</p>
+<ul>
+<li>tags标签</li>
+</ul>
+<p>和上面建立分类差不多</p>
+<p>新建标签</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br></pre></td></tr></table></figure>
+<p>这样会在再/myblog/source目录下生成tags目录并且生成了一个index.md文档。</p>
+<pre><code>---
+title: tags
+date: 2018-03-02 12:33:16
+type: &quot;tags&quot;
+comments: false
+---</code></pre>
+<p>再source/_post目录下打开你的博客，再顶部你可以看到如下：</p>
+<pre><code>---
+title: 欢迎来到我的博客
+date: 2020-08-12 17:46:43
+comments: true
+categories: 
+ - home
+ - xxx
+tags: 
+ - home
+ - xxx
+---</code></pre>
+<p>tags:就是你需要填写标签名的地方。<br>注意标签是可以写多个的，和分类不太一样。</p>
+<ul>
+<li>about关于</li>
+</ul>
+<p>新建标签</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo new page about</span><br></pre></td></tr></table></figure>
+<p>这样会在再/myblog/source目录下生成about目录并且生成了一个index.md文档。</p>
+<pre><code>---
+title: about
+date: 2020-08-13 13:04:30
+comments: false
+---</code></pre>
+<p>再文档中写下关于你的信息。</p>
+<ul>
 <li>RSS订阅</li>
+</ul>
+<p>安装插件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p>修改站点配置文件 _config.xml，添加如下内容：</p>
+<pre><code>#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: &quot; &quot;
+  order_by: -date
+  icon: icon.png</code></pre>
+<p>theme配置文件_config.yml，修改相应配置为</p>
+<pre><code>social:
+  GitHub: https://github.com/sszj0703-wxs || fab fa-github
+  #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
+  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  #Google: https://plus.google.com/yourname || fab fa-google
+  #Twitter: https://twitter.com/yourname || fab fa-twitter
+  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+  #YouTube: https://youtube.com/yourname || fab fa-youtube
+  #Instagram: https://instagram.com/yourname || fab fa-instagram
+  #Skype: skype:yourname?call|chat || fab fa-skype
+  RSS: /atom.xml || fa fa-rss</code></pre>
+<p>这里你还可以添加你个人分享，比如github，微博等等。</p>
+<ul>
 <li>comment评论系统</li>
 </ul>
+<p>关于评论系统的选择有很多，个人推荐Valine，方便，简洁，最重要一点是要支持Markdown。如果你不喜欢的可以参考 <a href="https://www.zhihu.com/question/267598518" title="Hexo(Next主题)评论系统哪个好？">Hexo(Next主题)评论系统哪个好？</a></p>
+<ul>
+<li><strong>注册<a href="https://leancloud.cn/" title="LeanCloud">LeanCloud</a></strong></li>
+</ul>
+<p>注册完成之后，点击创建应用。<br><img src="/images/md/1.jpg"></p>
+<p>点击开发版，点击创建。<br><img src="/images/md/2.jpg"><br>点击小齿轮，进入设置。</p>
+<p>在设置页，我们首先点击存储，查看是否有Comment和 Counter，没有则创建，权限设为无限制。<br><img src="/images/md/3.jpg"></p>
+<p>然后点击设置 &gt; 安全中心 ,将除了数据存储的服务全部关闭。<br><img src="/images/md/4.jpg"></p>
+<p>最后点击应用 Key 取得我们 AppKey 和 App id</p>
+<ul>
+<li><strong>在next主题中的配置</strong></li>
+</ul>
+<p>打开 <a href="https://www.jsdelivr.com/package/npm/valine">https://www.jsdelivr.com/package/npm/valine</a> 获取最新的 valine.min.js 的cdn地址：</p>
+<p><img src="/images/md/5.jpg"></p>
+<p>修改主题配置文件，配置CDN：</p>
+<pre><code># Valine
+valine: https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js</code></pre>
+<p>Valine的默认CDN地址是cdn.jsdelivr.net，不设置新的CDN可能慢的和乌龟一样。</p>
+<p>再打开配置Valine功能：</p>
+<pre><code># Valine
+# For more information: https://valine.js.org, https://github.com/xCss/Valine
+valine:
+  enable: true
+  appId: xxxxx
+  appKey: xxxxxx
+  placeholder: 欢迎畅所欲言 # Comment box placeholder
+  avatar: mm # Gravatar style
+  meta: [nick, mail, link] # Custom comment header: [nick, mail, link]
+  pageSize: 10 # Pagination size
+  lang: # Language, available values: en, zh-cn
+  visitor: false # Article reading statistic
+  comment_count: true # If false, comment count will only be displayed in post page, not in home page
+  recordIP: false # Whether to record the commenter IP
+  serverURLs: # When the custom domain name is enabled, fill it in here (it will be detected automatically by default, no need to fill in)
+  enableQQ: true # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+  requiredFields: [] # Set required fields: [nick] | [nick, mail]
+  #post_meta_order: 0</code></pre>
+<p>设置appId 和 appKey。</p>
+<p>打开博客的评论：</p>
+<p>可以在 Front-matter 中通过comments属性设置true或false控制该页面或者是文章的评论功能是否打开</p>
+<pre><code>title: 标签
+date: 2019-07-18 15:16:50
+type: &quot;tags&quot;
+comments: false</code></pre>
+<p>到这里，hexo搭建博客算是完成了，当然还有很多细致的功能等你发掘，不过个人认为这只不过是个学习的工具，不必要搞得太花哨。</p>
 <hr>
-<h3 id="git分支多终端工作（换电脑如何继续写博客）"><a href="#git分支多终端工作（换电脑如何继续写博客）" class="headerlink" title="git分支多终端工作（换电脑如何继续写博客）"></a>git分支多终端工作（换电脑如何继续写博客）</h3><hr>
-<h3 id="FQA"><a href="#FQA" class="headerlink" title="FQA"></a>FQA</h3>]]></content>
+<h3 id="git分支多终端工作（换电脑如何继续写博客）"><a href="#git分支多终端工作（换电脑如何继续写博客）" class="headerlink" title="git分支多终端工作（换电脑如何继续写博客）"></a>git分支多终端工作（换电脑如何继续写博客）</h3><p>想到当你电脑坏了或者换了或者想要多终端工作写博客那怎么办了？？，不要慌，干货来了！</p>
+<p>本机：</p>
+<ul>
+<li><strong>创建hexo分支</strong></li>
+</ul>
+<ol>
+<li>在gtihub仓库（最好是私有的避免暴露个人信息）中创建hexo分支，不做过多描述，大家都会！</li>
+<li>在本地任意磁盘任何位置，右键Git bash here 执行以下命令</li>
+</ol>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:username/username.github.io.git</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li><p>进入下载的username.github.io文件夹删除除了.git的所有文件。</p>
+</li>
+<li><p>删除myblog文件夹下的所有的.git .deploy_git文件（themes/下也要删除）</p>
+</li>
+<li><p>将username.github.io文件夹下的.git复制到自己的myblog文件夹下</p>
+</li>
+<li><p>myblog文件夹下应该有个.gitignore文件，如果没有自己建一个，内容如下</p>
+</li>
+</ol>
+<pre><code>.DS_Store
+Thumbs.db
+db.json
+.log
+node_modules/
+public/
+.deploy/</code></pre>
+<p> ps：.gitignore文件就是为了指定哪些文件上传的时候可以忽略，因为myblog/的文件并不全部都需要。</p>
+<ul>
+<li><strong>提交hexo分支</strong></li>
+</ul>
+<p>myblog文件夹下右键Git bash here 执行以下命令</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add -A</span><br><span class="line">git commit -m &quot;--&quot;</span><br><span class="line">git push origin hexo</span><br></pre></td></tr></table></figure>
+
+<p>新换机器：</p>
+<p>ssh创建密钥公钥，上面已经讲过了，这里不多做详述。</p>
+<ul>
+<li><strong>下载hexo分支内容</strong></li>
+</ul>
+ <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git@github.com:username/username.github.io.git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>重新安装插件</strong></li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo -g  #安装HEXO</span><br><span class="line">npm install #打包</span><br><span class="line">npm install hexo-deployer-git --save #同步内容至github，若前面同步不成功就安装这个</span><br><span class="line">npm install hexo-generator-feed --save #RSS订阅插件</span><br><span class="line">npm install hexo-generator-search --save #搜索插件</span><br></pre></td></tr></table></figure>
+<p>如果还有其他自行安装。。。。。。<br>接下来你就可以在新机器，继续写博客了！</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>OK 到这里结束了，有问题欢迎评论提出！</p>
+<hr>
+<h3 id="FQA"><a href="#FQA" class="headerlink" title="FQA"></a>FQA</h3><ol>
+<li><p>Q: 执行以下命令报错</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<p>A：建议换个nodejs高版本。</p>
+</li>
+<li><p>Q：rss订阅只有RSS文本无图标<br>A：RSS: /atom.xml || fa fa-rss  “|| 后面就是样式加上去”。</p>
+</li>
+<li><p>Q：页面评论显示的valine英文，汉化没用？<br>A：valine插件不受全局语言设置控制，需要单独修改themes\next\scripts\filters\comment 路径下 valine.js中的iconText关键字设置。</p>
+</li>
+<li><p>Q：上传hexo源码上去如何保证敏感信息安全（如：appId，appKey）<br>A：hexo源码你可以不放在username.github.io公共仓库下，单独开个private的仓库上传。<br>写博客要注意自己的隐私信息外漏。</p>
+</li>
+</ol>
+]]></content>
       <categories>
         <category>hexo</category>
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>欢迎来到我的博客</title>
-    <url>/2020/08/12/hello-world/</url>
-    <content><![CDATA[<p>宁可十年不将军，不可一日不拱卒</p>
-<a id="more"></a>
-
-<h2 id="好似神马都会，又好像神马都不会！！！"><a href="#好似神马都会，又好像神马都不会！！！" class="headerlink" title="好似神马都会，又好像神马都不会！！！"></a>好似神马都会，又好像神马都不会！！！</h2><h3 id="不会？"><a href="#不会？" class="headerlink" title="不会？"></a>不会？</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">此时要装逼一顿查。。。。。。（装逼完记得写博客，要不然以后没得装！）</span><br></pre></td></tr></table></figure>
-
-<h3 id="会！"><a href="#会！" class="headerlink" title="会！"></a>会！</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">此时唾沫横飞一顿装。。。。。。（回顾或者继续写博客，哪天忘记没得装！）</span><br></pre></td></tr></table></figure>
-
-<p>不要说记得住，老夫逮到就是一顿输出！</p>
-]]></content>
-      <categories>
-        <category>home</category>
-      </categories>
-      <tags>
-        <tag>home</tag>
       </tags>
   </entry>
 </search>
